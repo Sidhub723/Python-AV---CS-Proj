@@ -118,7 +118,6 @@ class Ui_MainWindow(object):
 
 
 
-
     def Logger(self,line,MalYesorNo,scantype):
             global filenm
             tim = str(datetime.datetime.now())

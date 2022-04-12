@@ -190,11 +190,11 @@ class Ui_MainWindow(object):
                                 if result2['positives'] > 0 :
                                         self.MalwareDestroyer()
                                         self.label.setText("YIKES! The file is most likely malware! \n DONT worry it's been nullified! \n For more information, read the LOGS")
-                                        self.label.setStyleSheet("background-color: rgb(255, 172, 164);")
+                                        self.label.setStyleSheet("background-color: rgb(255, 172, 164);")       # label is now red
                                         self.Logger('',True,'ds')
                                 else :
                                         self.label.setText("The file is SAFE! YAY!")
-                                        self.label.setStyleSheet("background-color: rgb(158, 255, 161);")
+                                        self.label.setStyleSheet("background-color: rgb(158, 255, 161);")       # label is now red
                                         self.Logger('',False,'ds')
                             except KeyError:
                                 self.label.setText("Oops! Looks like something went wrong with the deep scan! \n CLick on the Deep Scan button 45s later and try again!")
@@ -231,11 +231,11 @@ class Ui_MainWindow(object):
                             if malpresent == True :
                                             self.MalwareDestroyer()
                                             self.label.setText("MALWARE DETECTED! Do not worry, the file has been neutralised! \n Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")
+                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")       # label is now red
                                             self.Logger(line,True,'qs')
                             else :
                                             self.label.setText("YAAY! No malware detected! Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")
+                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")       # label is now red
                                             print("logger is called!")
                                             self.Logger('',False,'qs')      
                 
@@ -251,11 +251,11 @@ class Ui_MainWindow(object):
                             if malpresent == True :
                                             self.MalwareDestroyer()
                                             self.label.setText("MALWARE DETECTED! Do not worry, the file has been neutralised! \n Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")
+                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")       # label is now red
                                             self.Logger(line,True,'qs')
                             else :
                                             self.label.setText("YAAY! No malware detected! Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")
+                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")       # label is now red
                                             print("logger is called!")
                                             self.Logger('',False,'qs')  
                     
@@ -270,11 +270,11 @@ class Ui_MainWindow(object):
                             if malpresent == True :
                                             self.MalwareDestroyer()
                                             self.label.setText("MALWARE DETECTED! Do not worry, the file has been neutralised! \n Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")
+                                            self.label.setStyleSheet("background-color: rgb(255, 172, 164);")       # label is now red
                                             self.Logger(line,True,'qs')
                             else :
                                             self.label.setText("YAAY! No malware detected! Read LOGS for more details!")
-                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")
+                                            self.label.setStyleSheet("background-color: rgb(158, 255, 161);")       # label is now red
                                             print("logger is called!")
                                             self.Logger('',False,'qs') 
 

@@ -90,6 +90,7 @@ class Ui_MainWindow(object):
 
 
 
+        
     def viewlogs(self):
         os.startfile('C:/Users/Siddharth/Desktop/AV/LOGS.txt')
 

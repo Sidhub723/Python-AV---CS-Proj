@@ -118,7 +118,6 @@ class Ui_MainWindow(object):
 
 
 
-
     def Logger(self,line,MalYesorNo,scantype):
             global filenm
             tim = str(datetime.datetime.now())
@@ -202,8 +201,6 @@ class Ui_MainWindow(object):
 
 
 
-
-
     def quickscan(self):
             global filenm
             print("quickscan is called!")
@@ -278,8 +275,6 @@ class Ui_MainWindow(object):
                                             self.label.setStyleSheet("background-color: rgb(158, 255, 161);")
                                             print("logger is called!")
                                             self.Logger('',False,'qs') 
-
-
 
 
 

@@ -203,7 +203,7 @@ class Ui_MainWindow(object):
 
     def quickscan(self):
             global filenm
-            print("quickscan is called!")
+            print("Quickscan is called!")
             if filenm == '':
                     self.label.setText("Oops! You have to select a file first and then scan!\nSelect a file using the above button and then click on any of the scans!")
             else:
